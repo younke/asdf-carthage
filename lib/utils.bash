@@ -60,7 +60,7 @@ install_version() {
     (cd $install_path && make install PREFIX=. DISABLE_SUDO=1)
 
     local tool_cmd
-    tool_cmd="$(echo "carthage test" | cut -d' ' -f1)"
+    tool_cmd="$(echo "carthage" | cut -d' ' -f1)"
     test -x "$install_path/bin/$tool_cmd" || fail "Expected $install_path/bin/$tool_cmd to be executable."
 
     echo "carthage $version installation was successful!"
