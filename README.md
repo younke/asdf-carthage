@@ -26,7 +26,7 @@ Plugin:
 ```shell
 asdf plugin add carthage
 # or
-asdf plugin add https://github.com/younke/asdf-carthage.git
+asdf plugin add carthage https://github.com/younke/asdf-carthage.git
 ```
 
 carthage:
