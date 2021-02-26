@@ -17,7 +17,7 @@
 # Dependencies
 
 - `bash`, `curl`, `tar`: generic POSIX utilities.
-- `SOME_ENV_VAR`: set this environment variable in your shell config to load the correct version of tool x.
+- [Xcode 10.0 (Swift 4.2)](https://github.com/Carthage/Carthage#installing-carthage)
 
 # Install
 
@@ -42,7 +42,7 @@ asdf install carthage latest
 asdf global carthage latest
 
 # Now carthage commands are available
-carthage test
+carthage
 ```
 
 Check [asdf](https://github.com/asdf-vm/asdf) readme for more instructions on how to
