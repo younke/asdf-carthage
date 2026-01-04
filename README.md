@@ -1,6 +1,8 @@
 <div align="center">
 
-# asdf-carthage ![Build](https://github.com/younke/asdf-carthage/workflows/Build/badge.svg) ![Lint](https://github.com/younke/asdf-carthage/workflows/Lint/badge.svg)
+# asdf-carthage
+
+[![Build](https://github.com/younke/asdf-carthage/actions/workflows/build.yml/badge.svg)](https://github.com/younke/asdf-carthage/actions/workflows/build.yml) [![Lint](https://github.com/younke/asdf-carthage/actions/workflows/lint.yml/badge.svg)](https://github.com/younke/asdf-carthage/actions/workflows/lint.yml) [![Mise](https://github.com/younke/asdf-carthage/actions/workflows/test-mise.yml/badge.svg)](https://github.com/younke/asdf-carthage/actions/workflows/test-mise.yml)
 
 [carthage](https://github.com/Carthage/Carthage) plugin for the [asdf version manager](https://asdf-vm.com).
 
@@ -10,13 +12,12 @@
 
 - [Dependencies](#dependencies)
 - [Install](#install)
-- [Why?](#why)
 - [Contributing](#contributing)
 - [License](#license)
 
 # Dependencies
 
-- `bash`, `curl`, `tar`: generic POSIX utilities.
+- `bash`, `curl`, `tar`, and [POSIX utilities](https://pubs.opengroup.org/onlinepubs/9699919799/idx/utilities.html).
 - [Xcode 10.0 (Swift 4.2)](https://github.com/Carthage/Carthage#installing-carthage)
 
 # Install
@@ -39,7 +40,7 @@ asdf list-all carthage
 asdf install carthage latest
 
 # Set a version globally (on your ~/.tool-versions file)
-asdf global carthage latest
+asdf set -u carthage latest
 
 # Now carthage commands are available
 carthage
