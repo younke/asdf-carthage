@@ -4,10 +4,12 @@ on:
     paths-ignore:
       - "**.md"
   push:
+    branches:
+      - master
     paths-ignore:
       - "**.md"
   schedule:
-    - cron: "0 0 * * 5" # weekly on Friday at midnight
+    - cron: "0 0 13,27 * *"
 
 jobs:
   plugin_test:
